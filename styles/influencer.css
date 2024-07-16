@@ -36,9 +36,9 @@
 }
 
 .header-container{
-    gap: 10px;
-    margin: 20px;
+    margin: 50px;
     align-items: center;
+    justify-content: space-between;
 }
 .header-info-container{
     max-width: 582px;
@@ -68,8 +68,40 @@
     background-image: url('../images/Circle\ design.svg');
     background-position: center;
 }
-
-    
+/* main: company logos styles */
+.company-logos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin: 50px 150px;
+    align-items: center;
+}
+.company-logos img{
+    width: 80%;
+}
+ /*main: card design  */
+ .products{
+    margin-top: 50px;
+ }
+ .section-title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+ }
+ .product-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px 100px;
+    gap: 50px;
+ }
+ .card{
+    width: 329px;
+    height: 476px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+ }
 /* small devices styles */
 @media screen and (max-width:576px) {
     .navbar, .nav-link-container{
@@ -80,5 +112,12 @@
     }
     .header-info-container{
         text-align: center;
+    }
+    .company-logos{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 40px 50px;
+    }
+    .product-cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
